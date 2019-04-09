@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Runtime.InteropServices;
-
+using System.Data.OleDb;
 
 namespace CinemaV1
 {
@@ -23,7 +23,9 @@ namespace CinemaV1
             pictureBox1.Parent = Slideimg;
             pictureBox4.Parent = Slideimg;
             pictureBox5.Parent = Slideimg;
-            
+
+            txtuser.Text = System.Environment.UserName;
+
         }
 
         private int imgnumber = 1;
@@ -59,6 +61,11 @@ namespace CinemaV1
             //Aqui fica os banners, onde abre a tela com horario deles etc
             Dias frmHorarios = new Dias();
             frmHorarios.Show();
+        }
+
+        private void txtuser_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -48,14 +48,14 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(682, 338);
+            this.webBrowser1.Location = new System.Drawing.Point(815, 354);
             this.webBrowser1.Margin = new System.Windows.Forms.Padding(0);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.ScrollBarsEnabled = false;
-            this.webBrowser1.Size = new System.Drawing.Size(661, 295);
+            this.webBrowser1.Size = new System.Drawing.Size(528, 279);
             this.webBrowser1.TabIndex = 19;
-            this.webBrowser1.Url = new System.Uri("https://www.youtube.com/embed/MsQNB5hYvFc?&controls=1&autoplay=1", System.UriKind.Absolute);
+            this.webBrowser1.Url = new System.Uri("https://www.youtube.com/embed/MsQNB5hYvFc?&controls=1&autoplay=1&allowsInlineMedi" +
+        "aPlayback=1", System.UriKind.Absolute);
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // TagIdade
@@ -153,6 +153,7 @@
             this.Data2.TabIndex = 14;
             this.Data2.Text = "BtnDataHoje2";
             this.Data2.UseVisualStyleBackColor = false;
+            this.Data2.Click += new System.EventHandler(this.Data2_Click);
             // 
             // checkBox2D
             // 

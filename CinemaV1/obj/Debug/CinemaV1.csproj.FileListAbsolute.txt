@@ -1,4 +1,3 @@
-C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\CinemaV1.exe.config
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\CinemaV1.exe
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\CinemaV1.pdb
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Properties.Resources.resources
@@ -6,8 +5,6 @@ C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.csproj.Genera
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.csproj.CoreCompileInputs.cache
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.exe
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.pdb
-C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.cadastro.resources
-C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Main.resources
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Home.resources
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.csprojAssemblyReference.cache
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\Interop.ShockwaveFlashObjects.dll
@@ -16,3 +13,5 @@ C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\Interop.ShockwaveFlash
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.csproj.ResolveComReference.cache
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Dias.resources
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Login.resources
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Cadastros.resources

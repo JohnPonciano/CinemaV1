@@ -40,6 +40,8 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.labeltitulo = new System.Windows.Forms.Label();
+            this.VOCE = new System.Windows.Forms.Label();
+            this.txtuser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Slideimg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shazam)).BeginInit();
@@ -171,6 +173,25 @@
             this.labeltitulo.TabIndex = 15;
             this.labeltitulo.Text = "Em Cartaz";
             // 
+            // VOCE
+            // 
+            this.VOCE.AutoSize = true;
+            this.VOCE.Location = new System.Drawing.Point(1086, 24);
+            this.VOCE.Name = "VOCE";
+            this.VOCE.Size = new System.Drawing.Size(72, 13);
+            this.VOCE.TabIndex = 17;
+            this.VOCE.Text = "Logado como";
+            // 
+            // txtuser
+            // 
+            this.txtuser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtuser.Location = new System.Drawing.Point(1176, 19);
+            this.txtuser.Name = "txtuser";
+            this.txtuser.Size = new System.Drawing.Size(75, 23);
+            this.txtuser.TabIndex = 18;
+            this.txtuser.Text = "lbluser";
+            this.txtuser.UseVisualStyleBackColor = true;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -179,6 +200,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1337, 777);
+            this.Controls.Add(this.txtuser);
+            this.Controls.Add(this.VOCE);
             this.Controls.Add(this.labeltitulo);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -194,7 +217,6 @@
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
-            
             ((System.ComponentModel.ISupportInitialize)(this.Slideimg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shazam)).EndInit();
@@ -219,5 +241,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label labeltitulo;
+        private System.Windows.Forms.Label VOCE;
+        private System.Windows.Forms.Button txtuser;
     }
 }
