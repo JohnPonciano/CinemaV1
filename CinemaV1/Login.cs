@@ -26,9 +26,9 @@ namespace CinemaV1
         }
 
       
-        private void BtnLogin_Click(object sender, EventArgs e)
+        public void BtnLogin_Click(object sender, EventArgs e)
         {
-
+            
 
             try
             {
@@ -40,24 +40,27 @@ namespace CinemaV1
 
                 comm.Parameters.Add("@user", OleDbType.VarChar).Value = TxtBoxUser.Text;
                 comm.Parameters.Add("@senha", OleDbType.VarChar).Value = TxtBoxPass.Text;
-
+                
                 conn.Open();
 
+
                 
+
                 int i = int.Parse(comm.ExecuteScalar().ToString());
 
                 if (i > 0)
                 {
-                    
+
                     //Abre o form Home e esconde o form1
-                    Home frmHome = new Home();
+                     
+                    Home frmHome = new Home(TxtBoxUser.Text);
                    
                     frmHome.Show();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Error");
+                    MessageBox.Show("Error Usuario não foi encontrado, verifique a senha e o Login");
 
                 }
                 conn.Close();
@@ -69,6 +72,10 @@ namespace CinemaV1
                
 
             }
+
+            
+
+
             
 
         }
@@ -85,6 +92,13 @@ namespace CinemaV1
 
 
 
+        }
+
+        private void btnadm_Click(object sender, EventArgs e)
+        {
+            adminlogin frmAdm = new adminlogin();
+            frmAdm.Show();
+            this.Hide();
         }
     }
 }

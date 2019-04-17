@@ -15,3 +15,4 @@ C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.csproj.Resolv
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Dias.resources
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Login.resources
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Cadastros.resources
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.adminlogin.resources

@@ -37,6 +37,7 @@
             this.btnloginmain = new System.Windows.Forms.Button();
             this.btncadastroLOGIN = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.btnadm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -140,12 +141,23 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // btnadm
+            // 
+            this.btnadm.Location = new System.Drawing.Point(144, 206);
+            this.btnadm.Name = "btnadm";
+            this.btnadm.Size = new System.Drawing.Size(75, 23);
+            this.btnadm.TabIndex = 9;
+            this.btnadm.Text = "admin";
+            this.btnadm.UseVisualStyleBackColor = true;
+            this.btnadm.Click += new System.EventHandler(this.btnadm_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(359, 659);
+            this.Controls.Add(this.btnadm);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btncadastroLOGIN);
             this.Controls.Add(this.btnloginmain);
@@ -176,6 +188,7 @@
         private System.Windows.Forms.Button btnloginmain;
         private System.Windows.Forms.Button btncadastroLOGIN;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnadm;
     }
 }
 

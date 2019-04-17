@@ -29,26 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.btnSair = new System.Windows.Forms.Button();
             this.Slideimg = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.Shazam = new System.Windows.Forms.PictureBox();
-            this.CapitanMarvel = new System.Windows.Forms.PictureBox();
+            this.Box3 = new System.Windows.Forms.PictureBox();
+            this.Box2 = new System.Windows.Forms.PictureBox();
+            this.Box1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.labeltitulo = new System.Windows.Forms.Label();
-            this.VOCE = new System.Windows.Forms.Label();
-            this.txtuser = new System.Windows.Forms.Button();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.btnLogado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Slideimg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Shazam)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CapitanMarvel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Box3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Box2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Box1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSair
@@ -67,7 +62,6 @@
             // Slideimg
             // 
             this.Slideimg.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.Slideimg.BackColor = System.Drawing.Color.Transparent;
             this.Slideimg.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Slideimg.Enabled = false;
             this.Slideimg.ErrorImage = null;
@@ -78,87 +72,53 @@
             this.Slideimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Slideimg.TabIndex = 11;
             this.Slideimg.TabStop = false;
-            this.Slideimg.WaitOnLoad = true;
             // 
-            // pictureBox3
+            // Box3
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::CinemaV1.Properties.Resources.vingadores_ultimato_poster;
-            this.pictureBox3.Location = new System.Drawing.Point(871, 262);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(254, 402);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
+            this.Box3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Box3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Box3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Box3.Image = global::CinemaV1.Properties.Resources.vingadores_ultimato_poster;
+            this.Box3.Location = new System.Drawing.Point(871, 197);
+            this.Box3.Name = "Box3";
+            this.Box3.Size = new System.Drawing.Size(254, 402);
+            this.Box3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Box3.TabIndex = 10;
+            this.Box3.TabStop = false;
             // 
-            // Shazam
+            // Box2
             // 
-            this.Shazam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Shazam.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Shazam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Shazam.Image = global::CinemaV1.Properties.Resources.Shazam;
-            this.Shazam.Location = new System.Drawing.Point(534, 262);
-            this.Shazam.Name = "Shazam";
-            this.Shazam.Size = new System.Drawing.Size(254, 402);
-            this.Shazam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Shazam.TabIndex = 9;
-            this.Shazam.TabStop = false;
-            this.Shazam.Click += new System.EventHandler(this.Shazam_Click);
+            this.Box2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Box2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Box2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Box2.Image = global::CinemaV1.Properties.Resources.Shazam;
+            this.Box2.Location = new System.Drawing.Point(534, 197);
+            this.Box2.Name = "Box2";
+            this.Box2.Size = new System.Drawing.Size(254, 402);
+            this.Box2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Box2.TabIndex = 9;
+            this.Box2.TabStop = false;
+            this.Box2.Click += new System.EventHandler(this.Shazam_Click);
             // 
-            // CapitanMarvel
+            // Box1
             // 
-            this.CapitanMarvel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.CapitanMarvel.BackColor = System.Drawing.Color.White;
-            this.CapitanMarvel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.CapitanMarvel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CapitanMarvel.Image = global::CinemaV1.Properties.Resources._0230901_jpg_r_1280_720_f_jpg_q_x_xxyxx;
-            this.CapitanMarvel.Location = new System.Drawing.Point(172, 262);
-            this.CapitanMarvel.Name = "CapitanMarvel";
-            this.CapitanMarvel.Size = new System.Drawing.Size(256, 402);
-            this.CapitanMarvel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.CapitanMarvel.TabIndex = 0;
-            this.CapitanMarvel.TabStop = false;
+            this.Box1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Box1.BackColor = System.Drawing.Color.White;
+            this.Box1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Box1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Box1.Image = global::CinemaV1.Properties.Resources._0230901_jpg_r_1280_720_f_jpg_q_x_xxyxx;
+            this.Box1.Location = new System.Drawing.Point(172, 197);
+            this.Box1.Name = "Box1";
+            this.Box1.Size = new System.Drawing.Size(256, 402);
+            this.Box1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Box1.TabIndex = 0;
+            this.Box1.TabStop = false;
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(195, 593);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(559, 593);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(210, 71);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 13;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(898, 613);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(210, 71);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 14;
-            this.pictureBox5.TabStop = false;
             // 
             // labeltitulo
             // 
@@ -173,24 +133,55 @@
             this.labeltitulo.TabIndex = 15;
             this.labeltitulo.Text = "Em Cartaz";
             // 
-            // VOCE
+            // lbl1
             // 
-            this.VOCE.AutoSize = true;
-            this.VOCE.Location = new System.Drawing.Point(1086, 24);
-            this.VOCE.Name = "VOCE";
-            this.VOCE.Size = new System.Drawing.Size(72, 13);
-            this.VOCE.TabIndex = 17;
-            this.VOCE.Text = "Logado como";
+            this.lbl1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl1.Font = new System.Drawing.Font("Arial", 24F);
+            this.lbl1.ForeColor = System.Drawing.Color.White;
+            this.lbl1.Location = new System.Drawing.Point(911, 550);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(181, 72);
+            this.lbl1.TabIndex = 19;
+            this.lbl1.Text = "Vingadores \r\n  Ultimato";
             // 
-            // txtuser
+            // lbl2
             // 
-            this.txtuser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtuser.Location = new System.Drawing.Point(1176, 19);
-            this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(75, 23);
-            this.txtuser.TabIndex = 18;
-            this.txtuser.Text = "lbluser";
-            this.txtuser.UseVisualStyleBackColor = true;
+            this.lbl2.AutoSize = true;
+            this.lbl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl2.Font = new System.Drawing.Font("Arial", 24F);
+            this.lbl2.ForeColor = System.Drawing.Color.White;
+            this.lbl2.Location = new System.Drawing.Point(590, 563);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(141, 36);
+            this.lbl2.TabIndex = 20;
+            this.lbl2.Text = "Shazam!";
+            // 
+            // lbl3
+            // 
+            this.lbl3.AutoSize = true;
+            this.lbl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl3.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.Color.White;
+            this.lbl3.Location = new System.Drawing.Point(205, 563);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(201, 36);
+            this.lbl3.TabIndex = 21;
+            this.lbl3.Text = "Captã Marvel";
+            // 
+            // btnLogado
+            // 
+            this.btnLogado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogado.ForeColor = System.Drawing.Color.White;
+            this.btnLogado.Location = new System.Drawing.Point(1163, 19);
+            this.btnLogado.Name = "btnLogado";
+            this.btnLogado.Size = new System.Drawing.Size(75, 23);
+            this.btnLogado.TabIndex = 22;
+            this.btnLogado.Text = "logado";
+            this.btnLogado.UseVisualStyleBackColor = true;
             // 
             // Home
             // 
@@ -200,16 +191,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1337, 777);
-            this.Controls.Add(this.txtuser);
-            this.Controls.Add(this.VOCE);
+            this.Controls.Add(this.btnLogado);
+            this.Controls.Add(this.lbl3);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.labeltitulo);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.Shazam);
+            this.Controls.Add(this.Box3);
+            this.Controls.Add(this.Box2);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.CapitanMarvel);
+            this.Controls.Add(this.Box1);
             this.Controls.Add(this.Slideimg);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ForeColor = System.Drawing.SystemColors.Window;
@@ -218,12 +208,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             ((System.ComponentModel.ISupportInitialize)(this.Slideimg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Shazam)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CapitanMarvel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Box3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Box2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Box1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,17 +218,16 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox CapitanMarvel;
+        private System.Windows.Forms.PictureBox Box1;
         private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.PictureBox Shazam;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox Box2;
+        private System.Windows.Forms.PictureBox Box3;
         private System.Windows.Forms.PictureBox Slideimg;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label labeltitulo;
-        private System.Windows.Forms.Label VOCE;
-        private System.Windows.Forms.Button txtuser;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Button btnLogado;
     }
 }

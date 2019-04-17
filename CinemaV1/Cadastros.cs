@@ -49,6 +49,8 @@ namespace CinemaV1
                 SQL = "Insert Into Cadastros(Nome,Email,Senha) Values";
                 SQL += "('"+TxtBoxUser.Text+"','"+TxtBoxEmail.Text+"','"+TxtBoxPass.Text+"')";
 
+               
+
                 OleDbCommand cmd = new OleDbCommand(SQL,conn);
 
                 cmd.ExecuteNonQuery();

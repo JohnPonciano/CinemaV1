@@ -13,20 +13,73 @@ using System.Data.OleDb;
 
 namespace CinemaV1
 {
+
+
+
     public partial class Home : Form
     { //Script do slide
-        
+
+        public Home(string Valor)
+        {
+            InitializeComponent();
+            btnLogado.Text = Valor;
+            
+        }
+
+
         public Home()
         {
             InitializeComponent();
+
             // transparencia
-            pictureBox1.Parent = Slideimg;
-            pictureBox4.Parent = Slideimg;
-            pictureBox5.Parent = Slideimg;
 
-            txtuser.Text = System.Environment.UserName;
 
+            lbl2.Parent = Slideimg;
+            lbl3.Parent = Slideimg;
+            lbl1.Parent = Slideimg;
+            lbl1.BackColor = Color.Transparent;
+            lbl2.BackColor = Color.Transparent;
+            lbl3.BackColor = Color.Transparent;
+
+  // ________________________________BANCO_____________________________
+            try
+            {
+                String strConexao = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source = C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bdCadastro.mdb";
+                //cria a conexao
+                OleDbConnection conn = new OleDbConnection(strConexao);
+
+                OleDbCommand comm = new OleDbCommand("select * from Filmes where Imagens , Box , Nome ", conn);
+                conn.Open();
+
+                OleDbDataReader reader = comm.ExecuteReader();
+
+                Image img = null;
+
+                if (reader.Read())
+                {
+                    byte[] foto = (byte[])reader["Imagens"];
+
+                    MemoryStream ms = new MemoryStream(foto);
+                  img = Image.FromStream(ms);
+                    
+                }
+                Box1.Image = img;
+
+
+
+                conn.Close();
+
+            }
+
+            catch
+            {
+                MessageBox.Show("Erro no bd");
+            }
         }
+
+        //______________________________________________BANCO__________________________________________
+
+        
 
         private int imgnumber = 1;
         
@@ -54,6 +107,10 @@ namespace CinemaV1
         private void timer1_Tick(object sender, EventArgs e)
         {
             LoadNextImg(); //carregar slide
+
+
+           
+           
         }
 
         private void Shazam_Click(object sender, EventArgs e)
@@ -63,9 +120,6 @@ namespace CinemaV1
             frmHorarios.Show();
         }
 
-        private void txtuser_Click(object sender, EventArgs e)
-        {
-           
-        }
+        
     }
 }

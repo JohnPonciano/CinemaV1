@@ -120,9 +120,9 @@
             // 
             // labelTextpSinopse
             // 
-            this.labelTextpSinopse.Location = new System.Drawing.Point(312, 141);
+            this.labelTextpSinopse.Location = new System.Drawing.Point(312, 139);
             this.labelTextpSinopse.Name = "labelTextpSinopse";
-            this.labelTextpSinopse.Size = new System.Drawing.Size(343, 241);
+            this.labelTextpSinopse.Size = new System.Drawing.Size(534, 340);
             this.labelTextpSinopse.TabIndex = 12;
             this.labelTextpSinopse.Text = resources.GetString("labelTextpSinopse.Text");
             this.labelTextpSinopse.UseMnemonic = false;
@@ -211,7 +211,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1355, 642);
+            this.ClientSize = new System.Drawing.Size(1356, 651);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.checkBoxLeg);
             this.Controls.Add(this.checkBox3D);
