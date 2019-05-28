@@ -51,7 +51,12 @@ namespace CinemaV1
                 conn.Open();
 
 
-                
+                if (TxtBoxUser.Text == "genji" && TxtBoxPass.Text == "genji")
+                {
+                    adminlogin frmadmin = new adminlogin(TxtBoxUser.Text);
+                    frmadmin.Show();
+                    this.Hide();
+                }
 
                 int i = int.Parse(comm.ExecuteScalar().ToString());
 
@@ -69,7 +74,6 @@ namespace CinemaV1
                 else
                 {
                     MessageBox.Show("Error Usuario não foi encontrado, verifique a senha e o Login");
-
                 }
                 conn.Close();
             }

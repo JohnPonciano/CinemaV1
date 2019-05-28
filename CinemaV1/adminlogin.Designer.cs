@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminlogin));
             this.textsinopse = new System.Windows.Forms.TextBox();
             this.comboTagidade = new System.Windows.Forms.ComboBox();
             this.imgload = new System.Windows.Forms.PictureBox();
@@ -48,10 +49,10 @@
             // 
             // textsinopse
             // 
-            this.textsinopse.Location = new System.Drawing.Point(30, 96);
+            this.textsinopse.Location = new System.Drawing.Point(39, 315);
             this.textsinopse.Multiline = true;
             this.textsinopse.Name = "textsinopse";
-            this.textsinopse.Size = new System.Drawing.Size(345, 348);
+            this.textsinopse.Size = new System.Drawing.Size(345, 129);
             this.textsinopse.TabIndex = 0;
             this.textsinopse.Text = "Digite a Sinopse aqui";
             // 
@@ -71,6 +72,7 @@
             // 
             // imgload
             // 
+            this.imgload.BackColor = System.Drawing.Color.Transparent;
             this.imgload.Location = new System.Drawing.Point(433, 96);
             this.imgload.Name = "imgload";
             this.imgload.Size = new System.Drawing.Size(218, 348);
@@ -154,6 +156,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.radioBTNbox3);
             this.groupBox1.Controls.Add(this.radioBTNbox1);
             this.groupBox1.Controls.Add(this.label1);
@@ -204,6 +207,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1003, 498);
             this.Controls.Add(this.TxtUser);
             this.Controls.Add(this.checkedListGen);
@@ -215,6 +220,7 @@
             this.Controls.Add(this.imgload);
             this.Controls.Add(this.comboTagidade);
             this.Controls.Add(this.textsinopse);
+            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "adminlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
