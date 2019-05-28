@@ -10,30 +10,27 @@ using System.Windows.Forms;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Data.OleDb;
+using System.Data.Sql;
+using System.Data.SqlClient;
 
 namespace CinemaV1
 {
 
 
-
-    public partial class Home : Form
+public partial class Home : Form
     { //Script do slide
 
-        public Home(string Valor)
+
+        public Home (string Valor)
         {
+            
+
             InitializeComponent();
+
             btnLogado.Text = Valor;
             
-        }
-
-
-        public Home()
-        {
-            InitializeComponent();
-
             // transparencia
-
-
+            
             lbl2.Parent = Slideimg;
             lbl3.Parent = Slideimg;
             lbl1.Parent = Slideimg;
@@ -41,19 +38,40 @@ namespace CinemaV1
             lbl2.BackColor = Color.Transparent;
             lbl3.BackColor = Color.Transparent;
 
-  // ________________________________BANCO_____________________________
+        }
+
+        
+
+        public Home()
+        {
+            InitializeComponent();
+
+            //_______________BANCO_________//
             try
             {
                 String strConexao = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source = C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bdCadastro.mdb";
+
+                //string strConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\JR TECH\source\repos\CinemaV1\CinemaV1\bdGeral.mdf;Integrated Security=True";
+                
                 //cria a conexao
                 OleDbConnection conn = new OleDbConnection(strConexao);
 
-                OleDbCommand comm = new OleDbCommand("select * from Filmes where Imagens , Box , Nome ", conn);
+                //SqlConnection conn = new SqlConnection(strConexao);
+
+                OleDbCommand comm = new OleDbCommand("select * from Filmes where Imagens , Box , Nome "  , conn);
+
+                //SqlCommand comm = new SqlCommand (" select * from Filme where Imagens, Box, Nome ", conn );
+                
+
                 conn.Open();
 
-                OleDbDataReader reader = comm.ExecuteReader();
+               OleDbDataReader reader = comm.ExecuteReader();
 
-                Image img = null;
+               // SqlDataReader reader = comm.ExecuteReader ();
+
+
+
+               /*/ Image img = null;
 
                 if (reader.Read())
                 {
@@ -64,7 +82,7 @@ namespace CinemaV1
                     
                 }
                 Box1.Image = img;
-
+                /*/
 
 
                 conn.Close();
@@ -77,9 +95,14 @@ namespace CinemaV1
             }
         }
 
+        
+
+
+
+
         //______________________________________________BANCO__________________________________________
 
-        
+
 
         private int imgnumber = 1;
         
@@ -107,11 +130,9 @@ namespace CinemaV1
         private void timer1_Tick(object sender, EventArgs e)
         {
             LoadNextImg(); //carregar slide
-
-
-           
-           
+            
         }
+
 
         private void Shazam_Click(object sender, EventArgs e)
         {
@@ -120,6 +141,21 @@ namespace CinemaV1
             frmHorarios.Show();
         }
 
-        
+
+
+        private void btnLogado_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Deseja Sair?", "Deslogar", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+
+            if (confirm.ToString().ToUpper() == "YES")
+
+            {
+                Login frmLogin = new Login();
+                frmLogin.Show();
+                this.Close();
+
+            }
+            
+        }
     }
 }

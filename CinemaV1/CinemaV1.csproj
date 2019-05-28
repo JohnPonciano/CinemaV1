@@ -73,6 +73,11 @@
     <Compile Include="adminlogin.Designer.cs">
       <DependentUpon>adminlogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="bdGeralDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdGeralDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Cadastros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +116,9 @@
     <EmbeddedResource Include="Cadastros.resx">
       <DependentUpon>Cadastros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Horarios.resx">
+      <DependentUpon>Horarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +138,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="App.config" />
+    <None Include="bdGeralDataSet.xsc">
+      <DependentUpon>bdGeralDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bdGeralDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdGeralDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdGeralDataSet.xss">
+      <DependentUpon>bdGeralDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -178,9 +198,17 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bdGeral.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bdGeral_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>bdGeral.mdf</DependentUpon>
+    </Content>
     <Content Include="imagens\1.jpg" />
     <Content Include="imagens\2.jpg" />
     <Content Include="imagens\3.jpg" />
+    <None Include="Resources\e2b82aded815e80351b929a77519adaa.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

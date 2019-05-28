@@ -120,7 +120,7 @@
             this.btnloginfrm2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnloginfrm2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnloginfrm2.ForeColor = System.Drawing.Color.White;
-            this.btnloginfrm2.Location = new System.Drawing.Point(133, 489);
+            this.btnloginfrm2.Location = new System.Drawing.Point(133, 474);
             this.btnloginfrm2.Name = "btnloginfrm2";
             this.btnloginfrm2.Size = new System.Drawing.Size(100, 71);
             this.btnloginfrm2.TabIndex = 11;

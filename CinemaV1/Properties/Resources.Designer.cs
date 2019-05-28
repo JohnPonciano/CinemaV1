@@ -103,6 +103,16 @@ namespace CinemaV1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e2b82aded815e80351b929a77519adaa {
+            get {
+                object obj = ResourceManager.GetObject("e2b82aded815e80351b929a77519adaa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Shazam {
             get {
                 object obj = ResourceManager.GetObject("Shazam", resourceCulture);

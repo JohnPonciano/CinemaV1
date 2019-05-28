@@ -137,7 +137,7 @@
             // 
             this.lbl1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.lbl1.AutoSize = true;
-            this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl1.BackColor = System.Drawing.Color.Transparent;
             this.lbl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl1.Font = new System.Drawing.Font("Arial", 24F);
             this.lbl1.ForeColor = System.Drawing.Color.White;
@@ -150,7 +150,7 @@
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl2.BackColor = System.Drawing.Color.Transparent;
             this.lbl2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl2.Font = new System.Drawing.Font("Arial", 24F);
             this.lbl2.ForeColor = System.Drawing.Color.White;
@@ -163,7 +163,7 @@
             // lbl3
             // 
             this.lbl3.AutoSize = true;
-            this.lbl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl3.BackColor = System.Drawing.Color.Transparent;
             this.lbl3.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl3.ForeColor = System.Drawing.Color.White;
             this.lbl3.Location = new System.Drawing.Point(205, 563);
@@ -176,12 +176,13 @@
             // 
             this.btnLogado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogado.ForeColor = System.Drawing.Color.White;
-            this.btnLogado.Location = new System.Drawing.Point(1163, 19);
+            this.btnLogado.Location = new System.Drawing.Point(1177, 18);
             this.btnLogado.Name = "btnLogado";
-            this.btnLogado.Size = new System.Drawing.Size(75, 23);
+            this.btnLogado.Size = new System.Drawing.Size(77, 23);
             this.btnLogado.TabIndex = 22;
             this.btnLogado.Text = "logado";
             this.btnLogado.UseVisualStyleBackColor = true;
+            this.btnLogado.Click += new System.EventHandler(this.btnLogado_Click);
             // 
             // Home
             // 

@@ -8,13 +8,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CinemaV1
 {
     public partial class Horarios : Form
     {
+
+       
+        
         public Horarios()
         {
             InitializeComponent();
+
+
+            btnHorario1.Text = (DateTime.Now.ToString("HH:mm"));
+            button1.Text = (DateTime.Now.ToString("12:00"));
+            button2.Text = (DateTime.Now.ToString("23:30"));
+            button3.Text = (DateTime.Now.ToString("16:00"));
+            button4.Text = (DateTime.Now.ToString("18:30"));
+            button5.Text = (DateTime.Now.ToString("03:00"));
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

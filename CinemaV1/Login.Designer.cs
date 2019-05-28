@@ -106,7 +106,7 @@
             this.btnloginmain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnloginmain.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnloginmain.ForeColor = System.Drawing.Color.White;
-            this.btnloginmain.Location = new System.Drawing.Point(69, 435);
+            this.btnloginmain.Location = new System.Drawing.Point(69, 455);
             this.btnloginmain.Name = "btnloginmain";
             this.btnloginmain.Size = new System.Drawing.Size(215, 52);
             this.btnloginmain.TabIndex = 5;
@@ -120,7 +120,7 @@
             this.btncadastroLOGIN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncadastroLOGIN.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncadastroLOGIN.ForeColor = System.Drawing.Color.White;
-            this.btncadastroLOGIN.Location = new System.Drawing.Point(128, 562);
+            this.btncadastroLOGIN.Location = new System.Drawing.Point(128, 544);
             this.btncadastroLOGIN.Name = "btncadastroLOGIN";
             this.btncadastroLOGIN.Size = new System.Drawing.Size(100, 54);
             this.btncadastroLOGIN.TabIndex = 6;
@@ -143,11 +143,12 @@
             // 
             // btnadm
             // 
-            this.btnadm.Location = new System.Drawing.Point(144, 206);
+            this.btnadm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnadm.Location = new System.Drawing.Point(12, 12);
             this.btnadm.Name = "btnadm";
-            this.btnadm.Size = new System.Drawing.Size(75, 23);
+            this.btnadm.Size = new System.Drawing.Size(25, 23);
             this.btnadm.TabIndex = 9;
-            this.btnadm.Text = "admin";
+            this.btnadm.Text = "!";
             this.btnadm.UseVisualStyleBackColor = true;
             this.btnadm.Click += new System.EventHandler(this.btnadm_Click);
             // 

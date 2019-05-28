@@ -16,3 +16,7 @@ C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Dias.resource
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Login.resources
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Cadastros.resources
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.adminlogin.resources
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\bdGeral.mdf
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\bdGeral_log.ldf
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\CinemaV1.exe.config
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Horarios.resources

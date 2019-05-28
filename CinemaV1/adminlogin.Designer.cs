@@ -39,8 +39,9 @@
             this.radioBTNbox2 = new System.Windows.Forms.RadioButton();
             this.radioBTNbox3 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textNomeDoFilme = new System.Windows.Forms.TextBox();
+            this.txtNomeDoFilme = new System.Windows.Forms.TextBox();
             this.checkedListGen = new System.Windows.Forms.CheckedListBox();
+            this.TxtUser = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgload)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +51,7 @@
             this.textsinopse.Location = new System.Drawing.Point(30, 96);
             this.textsinopse.Multiline = true;
             this.textsinopse.Name = "textsinopse";
-            this.textsinopse.Size = new System.Drawing.Size(311, 348);
+            this.textsinopse.Size = new System.Drawing.Size(345, 348);
             this.textsinopse.TabIndex = 0;
             this.textsinopse.Text = "Digite a Sinopse aqui";
             // 
@@ -70,7 +71,7 @@
             // 
             // imgload
             // 
-            this.imgload.Location = new System.Drawing.Point(375, 96);
+            this.imgload.Location = new System.Drawing.Point(433, 96);
             this.imgload.Name = "imgload";
             this.imgload.Size = new System.Drawing.Size(218, 348);
             this.imgload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -79,7 +80,7 @@
             // 
             // btnLoadImg
             // 
-            this.btnLoadImg.Location = new System.Drawing.Point(693, 333);
+            this.btnLoadImg.Location = new System.Drawing.Point(709, 333);
             this.btnLoadImg.Name = "btnLoadImg";
             this.btnLoadImg.Size = new System.Drawing.Size(271, 59);
             this.btnLoadImg.TabIndex = 3;
@@ -89,11 +90,11 @@
             // 
             // BtnUploadAll
             // 
-            this.BtnUploadAll.Location = new System.Drawing.Point(735, 410);
+            this.BtnUploadAll.Location = new System.Drawing.Point(759, 398);
             this.BtnUploadAll.Name = "BtnUploadAll";
             this.BtnUploadAll.Size = new System.Drawing.Size(176, 67);
             this.BtnUploadAll.TabIndex = 4;
-            this.BtnUploadAll.Text = "Upload All";
+            this.BtnUploadAll.Text = "Upload";
             this.BtnUploadAll.UseVisualStyleBackColor = true;
             this.BtnUploadAll.Click += new System.EventHandler(this.BtnUploadAll_Click);
             // 
@@ -164,13 +165,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Em qual Box da tela deve ficar";
             // 
-            // textNomeDoFilme
+            // txtNomeDoFilme
             // 
-            this.textNomeDoFilme.Location = new System.Drawing.Point(728, 36);
-            this.textNomeDoFilme.Name = "textNomeDoFilme";
-            this.textNomeDoFilme.Size = new System.Drawing.Size(213, 20);
-            this.textNomeDoFilme.TabIndex = 12;
-            this.textNomeDoFilme.Text = "Nome do Filme";
+            this.txtNomeDoFilme.Location = new System.Drawing.Point(728, 36);
+            this.txtNomeDoFilme.Name = "txtNomeDoFilme";
+            this.txtNomeDoFilme.Size = new System.Drawing.Size(213, 20);
+            this.txtNomeDoFilme.TabIndex = 12;
+            this.txtNomeDoFilme.Text = "Nome do Filme";
             // 
             // checkedListGen
             // 
@@ -180,19 +181,33 @@
             "aventura",
             "drama",
             "terror"});
-            this.checkedListGen.Location = new System.Drawing.Point(761, 202);
+            this.checkedListGen.Location = new System.Drawing.Point(778, 203);
             this.checkedListGen.Name = "checkedListGen";
-            this.checkedListGen.Size = new System.Drawing.Size(120, 94);
+            this.checkedListGen.Size = new System.Drawing.Size(128, 124);
             this.checkedListGen.TabIndex = 13;
+            // 
+            // TxtUser
+            // 
+            this.TxtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtUser.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUser.ForeColor = System.Drawing.Color.White;
+            this.TxtUser.Location = new System.Drawing.Point(12, 476);
+            this.TxtUser.Name = "TxtUser";
+            this.TxtUser.Size = new System.Drawing.Size(113, 20);
+            this.TxtUser.TabIndex = 14;
+            this.TxtUser.Text = "Mestre ";
             // 
             // adminlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1003, 498);
+            this.Controls.Add(this.TxtUser);
             this.Controls.Add(this.checkedListGen);
-            this.Controls.Add(this.textNomeDoFilme);
+            this.Controls.Add(this.txtNomeDoFilme);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textNavegacao);
             this.Controls.Add(this.BtnUploadAll);
@@ -202,7 +217,9 @@
             this.Controls.Add(this.textsinopse);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "adminlogin";
-            this.Text = "adminlogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Administração";
+            this.Load += new System.EventHandler(this.adminlogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgload)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -224,7 +241,8 @@
         private System.Windows.Forms.RadioButton radioBTNbox2;
         private System.Windows.Forms.RadioButton radioBTNbox3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textNomeDoFilme;
+        private System.Windows.Forms.TextBox txtNomeDoFilme;
         private System.Windows.Forms.CheckedListBox checkedListGen;
+        private System.Windows.Forms.TextBox TxtUser;
     }
 }

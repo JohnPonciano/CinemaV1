@@ -35,15 +35,15 @@
             this.label2genero = new System.Windows.Forms.Label();
             this.btnSair = new System.Windows.Forms.Button();
             this.labelSinopseTitulo = new System.Windows.Forms.Label();
-            this.labelTextpSinopse = new System.Windows.Forms.Label();
+            this.labelTextSinopse = new System.Windows.Forms.Label();
             this.Data1 = new System.Windows.Forms.Button();
             this.Data2 = new System.Windows.Forms.Button();
             this.checkBox2D = new System.Windows.Forms.CheckBox();
             this.checkBoxDub = new System.Windows.Forms.CheckBox();
             this.checkBox3D = new System.Windows.Forms.CheckBox();
             this.checkBoxLeg = new System.Windows.Forms.CheckBox();
-            this.Bannerhorario = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Bannerhorario)).BeginInit();
+            this.BannerFilme = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.BannerFilme)).BeginInit();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -118,14 +118,14 @@
             this.labelSinopseTitulo.TabIndex = 11;
             this.labelSinopseTitulo.Text = "Sinopse";
             // 
-            // labelTextpSinopse
+            // labelTextSinopse
             // 
-            this.labelTextpSinopse.Location = new System.Drawing.Point(312, 139);
-            this.labelTextpSinopse.Name = "labelTextpSinopse";
-            this.labelTextpSinopse.Size = new System.Drawing.Size(534, 340);
-            this.labelTextpSinopse.TabIndex = 12;
-            this.labelTextpSinopse.Text = resources.GetString("labelTextpSinopse.Text");
-            this.labelTextpSinopse.UseMnemonic = false;
+            this.labelTextSinopse.Location = new System.Drawing.Point(312, 139);
+            this.labelTextSinopse.Name = "labelTextSinopse";
+            this.labelTextSinopse.Size = new System.Drawing.Size(534, 340);
+            this.labelTextSinopse.TabIndex = 12;
+            this.labelTextSinopse.Text = resources.GetString("labelTextSinopse.Text");
+            this.labelTextSinopse.UseMnemonic = false;
             // 
             // Data1
             // 
@@ -195,15 +195,15 @@
             this.checkBoxLeg.Text = "Leg";
             this.checkBoxLeg.UseVisualStyleBackColor = true;
             // 
-            // Bannerhorario
+            // BannerFilme
             // 
-            this.Bannerhorario.Image = global::CinemaV1.Properties.Resources.Shazam;
-            this.Bannerhorario.Location = new System.Drawing.Point(12, 12);
-            this.Bannerhorario.Name = "Bannerhorario";
-            this.Bannerhorario.Size = new System.Drawing.Size(275, 417);
-            this.Bannerhorario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Bannerhorario.TabIndex = 0;
-            this.Bannerhorario.TabStop = false;
+            this.BannerFilme.Image = global::CinemaV1.Properties.Resources.Shazam;
+            this.BannerFilme.Location = new System.Drawing.Point(12, 12);
+            this.BannerFilme.Name = "BannerFilme";
+            this.BannerFilme.Size = new System.Drawing.Size(275, 417);
+            this.BannerFilme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BannerFilme.TabIndex = 0;
+            this.BannerFilme.TabStop = false;
             // 
             // Dias
             // 
@@ -219,19 +219,19 @@
             this.Controls.Add(this.checkBox2D);
             this.Controls.Add(this.Data2);
             this.Controls.Add(this.Data1);
-            this.Controls.Add(this.labelTextpSinopse);
+            this.Controls.Add(this.labelTextSinopse);
             this.Controls.Add(this.labelSinopseTitulo);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.label2genero);
             this.Controls.Add(this.label1genero);
             this.Controls.Add(this.TagIdade);
-            this.Controls.Add(this.Bannerhorario);
+            this.Controls.Add(this.BannerFilme);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HorarioCaptan";
-            ((System.ComponentModel.ISupportInitialize)(this.Bannerhorario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BannerFilme)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,13 +239,13 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox Bannerhorario;
+        private System.Windows.Forms.PictureBox BannerFilme;
         private System.Windows.Forms.Label TagIdade;
         private System.Windows.Forms.Label label1genero;
         private System.Windows.Forms.Label label2genero;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Label labelSinopseTitulo;
-        private System.Windows.Forms.Label labelTextpSinopse;
+        private System.Windows.Forms.Label labelTextSinopse;
         private System.Windows.Forms.Button Data1;
         private System.Windows.Forms.Button Data2;
         private System.Windows.Forms.CheckBox checkBox2D;
