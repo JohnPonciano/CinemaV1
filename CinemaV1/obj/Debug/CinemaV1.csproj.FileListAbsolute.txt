@@ -12,7 +12,6 @@ C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\AxInterop.ShockwaveFla
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\Interop.ShockwaveFlashObjects.dll
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.csproj.ResolveComReference.cache
-C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Dias.resources
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Login.resources
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Cadastros.resources
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.adminlogin.resources
@@ -20,3 +19,8 @@ C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\bdGeral.mdf
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\bdGeral_log.ldf
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bin\Debug\CinemaV1.exe.config
 C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Horarios.resources
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.BoxMain.resources
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.BoxMain2.resources
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.BoxMain3.resources
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Compras.resources
+C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\obj\Debug\CinemaV1.Poltronas.resources

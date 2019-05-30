@@ -26,11 +26,10 @@ namespace CinemaV1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\bdcadastro.md" +
-            "f;Integrated Security=True")]
-        public string bdcadastroConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\bdCadastro.mdb")]
+        public string strConexao {
             get {
-                return ((string)(this["bdcadastroConnectionString"]));
+                return ((string)(this["strConexao"]));
             }
         }
         
@@ -39,9 +38,9 @@ namespace CinemaV1.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\bdGeral.mdf;I" +
             "ntegrated Security=True")]
-        public string bdGeralConnectionString {
+        public string strConexao2 {
             get {
-                return ((string)(this["bdGeralConnectionString"]));
+                return ((string)(this["strConexao2"]));
             }
         }
     }

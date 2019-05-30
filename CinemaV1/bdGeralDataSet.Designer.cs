@@ -1551,7 +1551,7 @@ SELECT Id, Nome, Email, Senha FROM Cadastros WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::CinemaV1.Properties.Settings.Default.bdGeralConnectionString;
+            this._connection.ConnectionString = global::CinemaV1.Properties.Settings.Default.strConexao2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1971,7 +1971,7 @@ SELECT Id, Imagens, Sinopse, Genero, TagIdade, VideoDoYT, Box, Nome FROM Filmes 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::CinemaV1.Properties.Settings.Default.bdGeralConnectionString;
+            this._connection.ConnectionString = global::CinemaV1.Properties.Settings.Default.strConexao2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

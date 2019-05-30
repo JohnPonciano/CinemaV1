@@ -33,14 +33,14 @@ namespace CinemaV1
 
             try
             {
-                String strConexao = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source = C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bdCadastro.mdb";
-               // string strConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\JR TECH\source\repos\CinemaV1\CinemaV1\bdGeral.mdf;Integrated Security=True";
+                
+               //string strConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\JR TECH\source\repos\CinemaV1\CinemaV1\bdGeral.mdf;Integrated Security=True";
                 //cria a conexao
-                OleDbConnection conn = new OleDbConnection(strConexao);
+
+                OleDbConnection conn = new OleDbConnection(CinemaV1.Properties.Settings.Default.strConexao);
                 //SqlConnection conn = new SqlConnection(strConexao);
 
                 OleDbCommand comm = new OleDbCommand("select * from Cadastros where Nome = @user and Senha = @senha",conn);
-
                // SqlCommand comm = new SqlCommand("select * from Cadastros where Nome = @user and Senha = @senha", conn);
 
                 comm.Parameters.Add("@user", OleDbType.VarChar).Value = TxtBoxUser.Text;
@@ -51,7 +51,12 @@ namespace CinemaV1
                 conn.Open();
 
 
-                
+                if (TxtBoxUser.Text == "genji" && TxtBoxPass.Text == "genji")
+                {
+                    adminlogin frmadmin = new adminlogin(TxtBoxUser.Text);
+                    frmadmin.Show();
+                    this.Hide();
+                }
 
                 int i = int.Parse(comm.ExecuteScalar().ToString());
 
@@ -69,14 +74,13 @@ namespace CinemaV1
                 else
                 {
                     MessageBox.Show("Error Usuario não foi encontrado, verifique a senha e o Login");
-
                 }
                 conn.Close();
             }
             catch (Exception  )
             {
 
-                MessageBox.Show("Error, Usuario ou Senha invalidos");
+                MessageBox.Show("Error, Usuario ou Senha invalidos, ou bd danificado");
                
 
             }
@@ -88,25 +92,31 @@ namespace CinemaV1
 
         }
 
-        private void btncadastroLOGIN_Click(object sender, EventArgs e)
-        {
-            
-            //Abre o Form Cadastro e esconde o form1
+      
 
+         //pseudo botão pra abrir a tela de adm rapido
+        private void btnadm_Click(object sender, EventArgs e)
+        {
+            adminlogin frmadmin = new adminlogin(TxtBoxUser.Text);
+            frmadmin.Show();
+            this.Hide();
+        }
+
+
+        private void linkLabelCadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
             Cadastros frmcadastro = new Cadastros();
             frmcadastro.Show();
             this.Hide();
             //----------------------------------------------------------------------------//
 
-
-
         }
 
-        private void btnadm_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            adminlogin frmadmin = new adminlogin(TxtBoxUser.Text);
-           frmadmin.Show();
-            this.Hide();
+            //HITTLER ESTÁ VIVO
+            //Devemos caça-lo
+            // DEUS VULT!
         }
     }
 }

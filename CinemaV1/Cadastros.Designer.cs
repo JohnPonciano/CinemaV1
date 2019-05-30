@@ -50,7 +50,7 @@
             this.TxtBoxPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TxtBoxPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtBoxPass.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxPass.ForeColor = System.Drawing.Color.White;
+            this.TxtBoxPass.ForeColor = System.Drawing.Color.Cyan;
             this.TxtBoxPass.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TxtBoxPass.Location = new System.Drawing.Point(122, 259);
             this.TxtBoxPass.Name = "TxtBoxPass";
@@ -65,7 +65,7 @@
             this.TxtBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtBoxUser.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtBoxUser.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxUser.ForeColor = System.Drawing.Color.White;
+            this.TxtBoxUser.ForeColor = System.Drawing.Color.Cyan;
             this.TxtBoxUser.Location = new System.Drawing.Point(122, 193);
             this.TxtBoxUser.Name = "TxtBoxUser";
             this.TxtBoxUser.Size = new System.Drawing.Size(171, 20);
@@ -106,7 +106,7 @@
             // 
             this.btncadastrarfrm2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btncadastrarfrm2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncadastrarfrm2.ForeColor = System.Drawing.Color.White;
+            this.btncadastrarfrm2.ForeColor = System.Drawing.Color.Cyan;
             this.btncadastrarfrm2.Location = new System.Drawing.Point(77, 383);
             this.btncadastrarfrm2.Name = "btncadastrarfrm2";
             this.btncadastrarfrm2.Size = new System.Drawing.Size(216, 61);
@@ -119,7 +119,7 @@
             // 
             this.btnloginfrm2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnloginfrm2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnloginfrm2.ForeColor = System.Drawing.Color.White;
+            this.btnloginfrm2.ForeColor = System.Drawing.Color.Cyan;
             this.btnloginfrm2.Location = new System.Drawing.Point(133, 474);
             this.btnloginfrm2.Name = "btnloginfrm2";
             this.btnloginfrm2.Size = new System.Drawing.Size(100, 71);
@@ -132,7 +132,7 @@
             // 
             this.TxtBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TxtBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtBoxEmail.ForeColor = System.Drawing.Color.White;
+            this.TxtBoxEmail.ForeColor = System.Drawing.Color.Cyan;
             this.TxtBoxEmail.Location = new System.Drawing.Point(122, 320);
             this.TxtBoxEmail.Name = "TxtBoxEmail";
             this.TxtBoxEmail.Size = new System.Drawing.Size(171, 20);
@@ -153,7 +153,7 @@
             // 
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.ForeColor = System.Drawing.Color.White;
+            this.btnSair.ForeColor = System.Drawing.Color.Red;
             this.btnSair.Location = new System.Drawing.Point(314, 24);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(44, 37);

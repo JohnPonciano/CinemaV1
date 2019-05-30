@@ -39,9 +39,11 @@ namespace CinemaV1
             try
             {
                 //string de conexao
-                String strConexao = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source = C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bdCadastro.mdb";
+                //String strConexao = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source = C:\Users\JR TECH\source\repos\CinemaV1\CinemaV1\bdCadastro.mdb";
+                //string strconexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\JR TECH\source\repos\CinemaV1\CinemaV1\bdGeral.mdf;Integrated Security=True";
                 //cria a conexao
-                OleDbConnection conn = new OleDbConnection(strConexao);
+                OleDbConnection conn = new OleDbConnection(CinemaV1.Properties.Settings.Default.strConexao);
+                //SqlConnection conn = new SqlConnection(strConexao);
                 //abrir conexao (conn)
                 conn.Open();
                 //comando slq
@@ -51,6 +53,7 @@ namespace CinemaV1
 
                
 
+                //SqlConnection cmd = new sqlcomand(SQL,conn);
                 OleDbCommand cmd = new OleDbCommand(SQL,conn);
 
                 cmd.ExecuteNonQuery();

@@ -84,6 +84,24 @@
     <Compile Include="Cadastros.Designer.cs">
       <DependentUpon>Cadastros.cs</DependentUpon>
     </Compile>
+    <Compile Include="BoxMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoxMain2.designer.cs">
+      <DependentUpon>BoxMain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoxMain3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoxMain3.designer.cs">
+      <DependentUpon>BoxMain3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras.Designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,17 +114,23 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dias.cs">
+    <Compile Include="BoxMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dias.Designer.cs">
-      <DependentUpon>Dias.cs</DependentUpon>
+    <Compile Include="BoxMain.Designer.cs">
+      <DependentUpon>BoxMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Horarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Horarios.Designer.cs">
       <DependentUpon>Horarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Poltronas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Poltronas.Designer.cs">
+      <DependentUpon>Poltronas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,6 +139,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastros.resx">
       <DependentUpon>Cadastros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoxMain2.resx">
+      <DependentUpon>BoxMain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoxMain3.resx">
+      <DependentUpon>BoxMain3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="compras.resx">
+      <DependentUpon>Compras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Horarios.resx">
       <DependentUpon>Horarios.cs</DependentUpon>
@@ -125,8 +158,11 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dias.resx">
-      <DependentUpon>Dias.cs</DependentUpon>
+    <EmbeddedResource Include="BoxMain.resx">
+      <DependentUpon>BoxMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Poltronas.resx">
+      <DependentUpon>Poltronas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -208,6 +244,10 @@
     <Content Include="imagens\1.jpg" />
     <Content Include="imagens\2.jpg" />
     <Content Include="imagens\3.jpg" />
+    <None Include="Resources\icons8-sala-de-estar-64 %281%29.png" />
+    <None Include="Resources\icons8-sala-de-estar-64.png" />
+    <None Include="Resources\icons8-fechar-janela-96.png" />
+    <None Include="Resources\icons8-ok-480.png" />
     <None Include="Resources\e2b82aded815e80351b929a77519adaa.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -221,6 +261,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

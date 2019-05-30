@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Horarios));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnHorario1 = new System.Windows.Forms.Button();
@@ -61,7 +62,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.button1.ForeColor = System.Drawing.Color.Cyan;
             this.button1.Location = new System.Drawing.Point(216, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 56);
@@ -75,7 +76,7 @@
             this.btnHorario1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnHorario1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHorario1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHorario1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnHorario1.ForeColor = System.Drawing.Color.Cyan;
             this.btnHorario1.Location = new System.Drawing.Point(30, 40);
             this.btnHorario1.Name = "btnHorario1";
             this.btnHorario1.Size = new System.Drawing.Size(126, 56);
@@ -83,6 +84,7 @@
             this.btnHorario1.Text = "00:00";
             this.btnHorario1.UseCompatibleTextRendering = true;
             this.btnHorario1.UseVisualStyleBackColor = false;
+            this.btnHorario1.Click += new System.EventHandler(this.btnHorario1_Click);
             // 
             // groupBox2
             // 
@@ -102,7 +104,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.DarkOrange;
+            this.button2.ForeColor = System.Drawing.Color.Cyan;
             this.button2.Location = new System.Drawing.Point(30, 38);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 56);
@@ -116,7 +118,7 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.DarkOrange;
+            this.button3.ForeColor = System.Drawing.Color.Cyan;
             this.button3.Location = new System.Drawing.Point(216, 38);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 56);
@@ -143,7 +145,7 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.DarkOrange;
+            this.button5.ForeColor = System.Drawing.Color.Cyan;
             this.button5.Location = new System.Drawing.Point(216, 45);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(126, 56);
@@ -157,7 +159,7 @@
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.DarkOrange;
+            this.button4.ForeColor = System.Drawing.Color.Cyan;
             this.button4.Location = new System.Drawing.Point(30, 45);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(126, 56);
@@ -170,7 +172,7 @@
             // 
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.ForeColor = System.Drawing.Color.White;
+            this.btnSair.ForeColor = System.Drawing.Color.Red;
             this.btnSair.Location = new System.Drawing.Point(415, 1);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(44, 37);
@@ -184,7 +186,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BackgroundImage = global::CinemaV1.Properties.Resources.e2b82aded815e80351b929a77519adaa;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(460, 535);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.groupBox3);
@@ -194,6 +196,7 @@
             this.Name = "Horarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Horarios";
+            this.Load += new System.EventHandler(this.Horarios_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

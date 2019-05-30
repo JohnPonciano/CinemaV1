@@ -35,9 +35,8 @@
             this.TxtBoxUser = new System.Windows.Forms.TextBox();
             this.TxtBoxPass = new System.Windows.Forms.TextBox();
             this.btnloginmain = new System.Windows.Forms.Button();
-            this.btncadastroLOGIN = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnadm = new System.Windows.Forms.Button();
+            this.linkLabelCadastro = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -62,6 +61,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -79,7 +79,8 @@
             this.TxtBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtBoxUser.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtBoxUser.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxUser.ForeColor = System.Drawing.Color.White;
+            this.TxtBoxUser.ForeColor = System.Drawing.Color.Cyan;
+            this.TxtBoxUser.ImeMode = System.Windows.Forms.ImeMode.On;
             this.TxtBoxUser.Location = new System.Drawing.Point(113, 283);
             this.TxtBoxUser.Name = "TxtBoxUser";
             this.TxtBoxUser.Size = new System.Drawing.Size(171, 20);
@@ -91,9 +92,9 @@
             this.TxtBoxPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TxtBoxPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtBoxPass.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxPass.ForeColor = System.Drawing.Color.White;
+            this.TxtBoxPass.ForeColor = System.Drawing.Color.Cyan;
             this.TxtBoxPass.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TxtBoxPass.Location = new System.Drawing.Point(113, 365);
+            this.TxtBoxPass.Location = new System.Drawing.Point(113, 368);
             this.TxtBoxPass.Name = "TxtBoxPass";
             this.TxtBoxPass.PasswordChar = '*';
             this.TxtBoxPass.Size = new System.Drawing.Size(171, 20);
@@ -105,7 +106,7 @@
             this.btnloginmain.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnloginmain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnloginmain.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnloginmain.ForeColor = System.Drawing.Color.White;
+            this.btnloginmain.ForeColor = System.Drawing.Color.Cyan;
             this.btnloginmain.Location = new System.Drawing.Point(69, 455);
             this.btnloginmain.Name = "btnloginmain";
             this.btnloginmain.Size = new System.Drawing.Size(215, 52);
@@ -114,25 +115,11 @@
             this.btnloginmain.UseVisualStyleBackColor = true;
             this.btnloginmain.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
-            // btncadastroLOGIN
-            // 
-            this.btncadastroLOGIN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncadastroLOGIN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncadastroLOGIN.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncadastroLOGIN.ForeColor = System.Drawing.Color.White;
-            this.btncadastroLOGIN.Location = new System.Drawing.Point(128, 544);
-            this.btncadastroLOGIN.Name = "btncadastroLOGIN";
-            this.btncadastroLOGIN.Size = new System.Drawing.Size(100, 54);
-            this.btncadastroLOGIN.TabIndex = 6;
-            this.btncadastroLOGIN.Text = "Cadastrar";
-            this.btncadastroLOGIN.UseVisualStyleBackColor = true;
-            this.btncadastroLOGIN.Click += new System.EventHandler(this.btncadastroLOGIN_Click);
-            // 
             // btnSair
             // 
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.ForeColor = System.Drawing.Color.White;
+            this.btnSair.ForeColor = System.Drawing.Color.Red;
             this.btnSair.Location = new System.Drawing.Point(303, 12);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(44, 37);
@@ -141,16 +128,18 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // btnadm
+            // linkLabelCadastro
             // 
-            this.btnadm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnadm.Location = new System.Drawing.Point(12, 12);
-            this.btnadm.Name = "btnadm";
-            this.btnadm.Size = new System.Drawing.Size(25, 23);
-            this.btnadm.TabIndex = 9;
-            this.btnadm.Text = "!";
-            this.btnadm.UseVisualStyleBackColor = true;
-            this.btnadm.Click += new System.EventHandler(this.btnadm_Click);
+            this.linkLabelCadastro.AutoSize = true;
+            this.linkLabelCadastro.LinkColor = System.Drawing.Color.Cyan;
+            this.linkLabelCadastro.Location = new System.Drawing.Point(96, 528);
+            this.linkLabelCadastro.Name = "linkLabelCadastro";
+            this.linkLabelCadastro.Size = new System.Drawing.Size(165, 13);
+            this.linkLabelCadastro.TabIndex = 8;
+            this.linkLabelCadastro.TabStop = true;
+            this.linkLabelCadastro.Text = "Não tem uma conta? Cadastre-se";
+            this.linkLabelCadastro.VisitedLinkColor = System.Drawing.Color.Magenta;
+            this.linkLabelCadastro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelCadastro_LinkClicked);
             // 
             // Login
             // 
@@ -158,9 +147,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(359, 659);
-            this.Controls.Add(this.btnadm);
+            this.Controls.Add(this.linkLabelCadastro);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.btncadastroLOGIN);
             this.Controls.Add(this.btnloginmain);
             this.Controls.Add(this.TxtBoxPass);
             this.Controls.Add(this.TxtBoxUser);
@@ -187,9 +175,8 @@
         private System.Windows.Forms.TextBox TxtBoxUser;
         private System.Windows.Forms.TextBox TxtBoxPass;
         private System.Windows.Forms.Button btnloginmain;
-        private System.Windows.Forms.Button btncadastroLOGIN;
         private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.Button btnadm;
+        private System.Windows.Forms.LinkLabel linkLabelCadastro;
     }
 }
 

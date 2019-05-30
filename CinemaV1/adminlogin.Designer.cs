@@ -48,7 +48,8 @@
             // 
             // textsinopse
             // 
-            this.textsinopse.Location = new System.Drawing.Point(30, 96);
+            this.textsinopse.BackColor = System.Drawing.Color.White;
+            this.textsinopse.Location = new System.Drawing.Point(39, 96);
             this.textsinopse.Multiline = true;
             this.textsinopse.Name = "textsinopse";
             this.textsinopse.Size = new System.Drawing.Size(345, 348);
@@ -57,6 +58,9 @@
             // 
             // comboTagidade
             // 
+            this.comboTagidade.BackColor = System.Drawing.Color.White;
+            this.comboTagidade.Cursor = System.Windows.Forms.Cursors.No;
+            this.comboTagidade.ForeColor = System.Drawing.Color.Black;
             this.comboTagidade.FormattingEnabled = true;
             this.comboTagidade.Items.AddRange(new object[] {
             "10",
@@ -71,6 +75,7 @@
             // 
             // imgload
             // 
+            this.imgload.BackColor = System.Drawing.Color.Transparent;
             this.imgload.Location = new System.Drawing.Point(433, 96);
             this.imgload.Name = "imgload";
             this.imgload.Size = new System.Drawing.Size(218, 348);
@@ -80,26 +85,31 @@
             // 
             // btnLoadImg
             // 
+            this.btnLoadImg.BackColor = System.Drawing.Color.White;
+            this.btnLoadImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoadImg.Location = new System.Drawing.Point(709, 333);
             this.btnLoadImg.Name = "btnLoadImg";
             this.btnLoadImg.Size = new System.Drawing.Size(271, 59);
             this.btnLoadImg.TabIndex = 3;
             this.btnLoadImg.Text = "Carregar imagem";
-            this.btnLoadImg.UseVisualStyleBackColor = true;
+            this.btnLoadImg.UseVisualStyleBackColor = false;
             this.btnLoadImg.Click += new System.EventHandler(this.btnLoadImg_Click);
             // 
             // BtnUploadAll
             // 
+            this.BtnUploadAll.BackColor = System.Drawing.Color.White;
+            this.BtnUploadAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnUploadAll.Location = new System.Drawing.Point(759, 398);
             this.BtnUploadAll.Name = "BtnUploadAll";
             this.BtnUploadAll.Size = new System.Drawing.Size(176, 67);
             this.BtnUploadAll.TabIndex = 4;
             this.BtnUploadAll.Text = "Upload";
-            this.BtnUploadAll.UseVisualStyleBackColor = true;
+            this.BtnUploadAll.UseVisualStyleBackColor = false;
             this.BtnUploadAll.Click += new System.EventHandler(this.BtnUploadAll_Click);
             // 
             // textNavegacao
             // 
+            this.textNavegacao.BackColor = System.Drawing.Color.White;
             this.textNavegacao.Location = new System.Drawing.Point(199, 36);
             this.textNavegacao.Name = "textNavegacao";
             this.textNavegacao.Size = new System.Drawing.Size(452, 20);
@@ -131,13 +141,14 @@
             // radioBTNbox2
             // 
             this.radioBTNbox2.AutoSize = true;
+            this.radioBTNbox2.BackColor = System.Drawing.Color.Transparent;
             this.radioBTNbox2.Location = new System.Drawing.Point(67, 43);
             this.radioBTNbox2.Name = "radioBTNbox2";
             this.radioBTNbox2.Size = new System.Drawing.Size(49, 17);
             this.radioBTNbox2.TabIndex = 9;
             this.radioBTNbox2.TabStop = true;
             this.radioBTNbox2.Text = "Box2";
-            this.radioBTNbox2.UseVisualStyleBackColor = true;
+            this.radioBTNbox2.UseVisualStyleBackColor = false;
             this.radioBTNbox2.CheckedChanged += new System.EventHandler(this.radioBTNbox2_CheckedChanged);
             // 
             // radioBTNbox3
@@ -150,10 +161,10 @@
             this.radioBTNbox3.TabStop = true;
             this.radioBTNbox3.Text = "Box3";
             this.radioBTNbox3.UseVisualStyleBackColor = true;
-            this.radioBTNbox3.CheckedChanged += new System.EventHandler(this.radioBTNbox3_CheckedChanged_1);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.radioBTNbox3);
             this.groupBox1.Controls.Add(this.radioBTNbox1);
             this.groupBox1.Controls.Add(this.label1);
@@ -167,6 +178,7 @@
             // 
             // txtNomeDoFilme
             // 
+            this.txtNomeDoFilme.BackColor = System.Drawing.Color.White;
             this.txtNomeDoFilme.Location = new System.Drawing.Point(728, 36);
             this.txtNomeDoFilme.Name = "txtNomeDoFilme";
             this.txtNomeDoFilme.Size = new System.Drawing.Size(213, 20);
@@ -175,6 +187,7 @@
             // 
             // checkedListGen
             // 
+            this.checkedListGen.BackColor = System.Drawing.Color.White;
             this.checkedListGen.FormattingEnabled = true;
             this.checkedListGen.Items.AddRange(new object[] {
             "acao",
@@ -203,7 +216,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1003, 498);
             this.Controls.Add(this.TxtUser);
             this.Controls.Add(this.checkedListGen);
@@ -215,11 +229,12 @@
             this.Controls.Add(this.imgload);
             this.Controls.Add(this.comboTagidade);
             this.Controls.Add(this.textsinopse);
+            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "adminlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administração";
-            this.Load += new System.EventHandler(this.adminlogin_Load);
+            this.Load += new System.EventHandler(this.adminlogin_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.imgload)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

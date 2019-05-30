@@ -33,5 +33,17 @@ namespace CinemaV1
         {
             Application.Exit();
         }
+
+        private void Horarios_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHorario1_Click(object sender, EventArgs e)
+        {
+            Poltronas frmLogin = new Poltronas();
+            frmLogin.Show();
+            this.Hide();
+        }
     }
 }

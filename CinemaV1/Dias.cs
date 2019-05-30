@@ -46,8 +46,8 @@ namespace CinemaV1
              "</body></html>";
              var url = "https://www.youtube.com/embed/MsQNB5hYvFc?&controls=1&autoplay=1";
              this.webBrowser1.DocumentText = string.Format(embed, url);
-             
              */
+
             base.OnLoad(e);
             var embed = "<html><head>" +
             "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
